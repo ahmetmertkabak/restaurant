@@ -72,7 +72,7 @@ export function HeroSection() {
               size="lg"
               variant="outline"
               className="bg-white/10 backdrop-blur-sm border-white/40 text-white hover:bg-white/20 rounded-full px-8 py-6 text-base font-light transition-all duration-300 hover:scale-105"
-              onClick={() => window.open("https://instagram.com/saracoffeerestaurant", "_blank")}
+              onClick={() => window.open("https://www.instagram.com/sara_restaurantcoffee2024?igsh=MWtscm4xOWVwcGV0bw%3D%3D&utm_source=qr", "_blank")}
             >
               <Instagram className="w-5 h-5 mr-2" />
               Instagram'da Takip Et
