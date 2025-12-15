@@ -176,7 +176,7 @@ const menuCatalog: Record<"yiyecekler" | "icecekler", MenuCategory[]> = {
       title: "Special İçecekler",
       headline: "Meyve ve çay esansı buluşması",
       description: "Refresha serisi; ferahlatıcı ve imza reçeteler.",
-      image: "/berry-smoothie-frozen-drink-colorful.jpg",
+      image: "/refresha-drink-image.jpg",
       badge: "Refresha",
       items: ["Cool Lime", "Berry Hibiscus", "Sara Special"],
     },
