@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { FileText, Instagram, Facebook, Twitter, Award, Users, TrendingUp, Heart } from "lucide-react"
+import { FileText, Instagram, Twitter, Award, Users, TrendingUp, Heart } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 const benefits = [
@@ -123,16 +123,6 @@ export function CoffeeShopFranchise() {
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                 <Instagram className="h-4 w-4" />
                 Instagram
-              </a>
-            </Button>
-            <Button
-              size="sm"
-              className="gap-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-full font-light px-6"
-              asChild
-            >
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                <Facebook className="h-4 w-4" />
-                Facebook
               </a>
             </Button>
             <Button

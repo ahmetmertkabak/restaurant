@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { Facebook, Instagram, Twitter, Mail } from "lucide-react"
+import { Instagram, Twitter, Mail } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 export function SocialFollow() {
@@ -30,14 +30,6 @@ export function SocialFollow() {
           <span className="text-xs font-light tracking-wider [writing-mode:vertical-lr] rotate-180 mb-2">
             @sara_restaurantcoffee2024
           </span>
-
-          <Link
-            href="https://www.facebook.com/share/19UmKAkgJK/?mibextid=wwXIfr"
-            target="_blank"
-            className="w-8 h-8 rounded-full border border-background/30 flex items-center justify-center hover:border-background hover:scale-110 transition-all"
-          >
-            <Facebook className="w-4 h-4" />
-          </Link>
 
           <Link
             href="https://www.instagram.com/sara_restaurantcoffee2024?igsh=MWtscm4xOWVwcGV0bw%3D%3D&utm_source=qr"

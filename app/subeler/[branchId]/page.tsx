@@ -4,7 +4,7 @@ import { SocialFollow } from "@/components/social-follow"
 import { Footer } from "@/components/footer"
 import { branches } from "@/lib/branches-data"
 import { Card } from "@/components/ui/card"
-import { MapPin, Phone, Clock, Facebook, Instagram, Twitter, Mail } from "lucide-react"
+import { MapPin, Phone, Clock, Instagram, Twitter, Mail } from "lucide-react"
 import Link from "next/link"
 
 type BranchDetailPageProps = {
@@ -106,16 +106,6 @@ export default async function BranchDetailPage({ params }: BranchDetailPageProps
               <div className="bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 rounded-2xl p-8 shadow-xl">
                 <h2 className="text-2xl font-semibold text-white mb-6">Sosyal Medya</h2>
                 <div className="flex items-center gap-4 flex-wrap">
-                  {branch.socials.facebook && (
-                    <a
-                      href={branch.socials.facebook}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-12 h-12 rounded-full border-2 border-white/20 flex items-center justify-center hover:border-primary hover:bg-primary/10 transition-all"
-                    >
-                      <Facebook className="w-5 h-5 text-white" />
-                    </a>
-                  )}
                   {branch.socials.instagram && (
                     <a
                       href={branch.socials.instagram}

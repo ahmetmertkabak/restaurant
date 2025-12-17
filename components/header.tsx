@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Menu, X, Instagram, Facebook, Mail } from "lucide-react"
+import { Menu, X, Instagram, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navLinks = [
@@ -101,17 +101,18 @@ export function Header() {
             <Link href="/" className={`flex items-center gap-2 transition-opacity ${isScrolled ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
               <span className="text-lg font-serif text-white tracking-widest">SARA</span>
             </Link>
+          </div>
 
-            <div className="ml-auto">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="text-white hover:bg-white/10"
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              >
-                {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-              </Button>
-            </div>
+          {/* Fixed Mobile Menu Button */}
+          <div className="lg:hidden fixed top-4 right-4 z-[60]">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="text-white hover:bg-white/10 bg-black/20 backdrop-blur-sm"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </Button>
           </div>
         </div>
 

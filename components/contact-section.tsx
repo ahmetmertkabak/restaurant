@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Card, CardContent } from '@/components/ui/card'
-import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, CheckCircle2 } from 'lucide-react'
+import { Mail, Phone, MapPin, Instagram, Twitter, CheckCircle2 } from 'lucide-react'
 
 export function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -69,21 +69,18 @@ export function ContactSection() {
             {
               title: "Sara Restaurant & Coffee",
               email: "saracoffeerestaurant@gmail.com",
-              facebook: "https://www.facebook.com/share/1BavKVYu3e/?mibextid=wwXIfr",
               instagram: "https://www.instagram.com/sara_restaurantcoffee2024?igsh=MWtscm4xOWVwcGV0bw%3D%3D&utm_source=qr",
               twitter: "https://x.com/sararestau83522?s=21",
             },
             {
               title: "Sara Coffee",
               email: "saracoffee2024@gmail.com",
-              facebook: "https://www.facebook.com/share/1DLiCkvPm5/?mibextid=wwXIfr",
               instagram: "https://www.instagram.com/sara_coffee2024?igsh=cDc1b254bXY4ZTR5&utm_source=qr",
               twitter: "https://x.com/saracoffee2024?s=21",
             },
             {
               title: "Sara Restaurant",
               email: "sararestaurantt@gmail.com",
-              facebook: "https://www.facebook.com/share/17cbAkWHwc/?mibextid=wwXIfr",
               instagram: "https://www.instagram.com/sara_restaurant2024?igsh=MWs4OTU4enR6OXAyZw%3D%3D&utm_source=qr",
               twitter: "https://x.com/sararestaurantt?s=21",
             },
@@ -98,13 +95,6 @@ export function ContactSection() {
                   <p className="text-sm text-muted-foreground">{account.email}</p>
                 </div>
                 <div className="flex items-center justify-center gap-3 mt-4">
-                  <a
-                    href={account.facebook}
-                    target="_blank"
-                    className="w-9 h-9 rounded-full border border-border flex items-center justify-center hover:border-primary hover:bg-primary/10 transition-all duration-300 hover:scale-110"
-                  >
-                    <Facebook className="w-4 h-4 text-primary" />
-                  </a>
                   <a
                     href={account.instagram}
                     target="_blank"
