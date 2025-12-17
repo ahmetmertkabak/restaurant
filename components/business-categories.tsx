@@ -21,7 +21,7 @@ const categories = [
 ]
 
 const handleWhatsApp = () => {
-  window.open("https://wa.me/905XXXXXXXXX", "_blank")
+  window.open("https://wa.me/905316535175", "_blank")
 }
 
 export function BusinessCategories() {
